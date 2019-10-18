@@ -4,10 +4,10 @@
     <form action="<%= milkshakes_path %>" method="GET">
         <input type="search" name="search" />
     </form>
+    <%= link_to("Create Milkshake", new_milkshake_path) %>
     <section>
         <% @milkshakes.each do |milkshake| %>
             <%= link_to(milkshake) do %>
-            <a href="/milkshakes/<%= milkshake.id %>">
                 <div>
                     <img src="<%= milkshake.image.url %>" />
                     <h2><%= milkshake.name %></h2>
