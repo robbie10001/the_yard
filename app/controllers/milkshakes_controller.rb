@@ -12,10 +12,10 @@ class MilkshakesController < ApplicationController
     end
 
     def new
-        
+        @milkshake = Milkshake.new
     end
 
     def create
-
+        byebug
     end
 end
